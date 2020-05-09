@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+{{ std }}
+<form method="post" action="https://payeer.com/merchant/">
+  <input type="hidden" name="m_shop" value="1013136080">
+  <input type="hidden" name="m_orderid" value="4">
+  <input type="hidden" name="m_amount" value="500.00">
+  <input type="hidden" name="m_curr" value="RUB">
+  <input type="hidden" name="m_desc" value="">
+  <input type="hidden" name="m_sign" value="{{ std }}">
+  <input type="submit" placeholder="Обычная версия" value="send" />
+</form>
+
+{{ love }}
+<form method="post" action="https://payeer.com/merchant/">
+  <input type="hidden" name="m_shop" value="1013136080">
+  <input type="hidden" name="m_orderid" value="3">
+  <input type="hidden" name="m_amount" value="999.00">
+  <input type="hidden" name="m_curr" value="RUB">
+  <input type="hidden" name="m_desc" value="">
+  <input type="hidden" name="m_sign" value="{{ love }}">
+  <input type="submit" placeholder="Версия для влюбленных" value="send" />
+</form>
+
+{{ pro }}
+<form method="post" action="https://payeer.com/merchant/">
+  <input type="hidden" name="m_shop" value="1013136080">
+  <input type="hidden" name="m_orderid" value="2">
+  <input type="hidden" name="m_amount" value="1399.00">
+  <input type="hidden" name="m_curr" value="RUB">
+  <input type="hidden" name="m_desc" value="">
+  <input type="hidden" name="m_sign" value="{{ pro }}">
+  <input type="submit" placeholder="Версия для влюбленных" value="send" />
+</form>
+
+{{ vip }}
+<form method="post" action="https://payeer.com/merchant/">
+  <input type="hidden" name="m_shop" value="1013136080">
+  <input type="hidden" name="m_orderid" value="1">
+  <input type="hidden" name="m_amount" value="1799.00">
+  <input type="hidden" name="m_curr" value="RUB">
+  <input type="hidden" name="m_desc" value="">
+  <input type="hidden" name="m_sign" value="{{ vip }}">
+  <input type="submit" placeholder="Vip версия" value="send" />
+</form>
+</body>
+</html>
